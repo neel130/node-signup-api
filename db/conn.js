@@ -1,9 +1,10 @@
+const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 
+dotenv.config({ path: './config.env' });
 
 
-
-const DB = "mongodb+srv://neel:raja1234@cluster0.ukzjx.mongodb.net/node?retryWrites=true&w=majority"
+const DB = process.env.DATABASE;
 
 
 

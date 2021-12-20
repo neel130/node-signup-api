@@ -24,7 +24,7 @@ app.post('/',async(req,res)=>{
     else {
         let data = new User({ name, email, phone, password });
         let result = await data.save();
-        res.status(201).send(result);
+        res.status(201).send(`signup successful`);
         console.log(result);
 
     }
